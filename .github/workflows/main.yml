@@ -22,4 +22,4 @@ jobs:
         run: npm install -g newman
 
       - name: Run Postman Tests
-        run: newman run postman/tests.json -e postman/environment.json
+        run: newman run Postman/tests.json --environment Postman/environment.json
