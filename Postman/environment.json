@@ -1,0 +1,26 @@
+{
+	"id": "23fd2ac3-4745-43d9-9dbf-92acbcd28b83",
+	"name": "Prueba postman",
+	"values": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThiMjUyNGVhYTNkOTAwMTMzYjQ5ZDAiLCJpYXQiOjE3MDM2MTgyMTl9.Ehwi4lGByYOfkM-dSnLy04sjdRT9MiNlV8VG7RB-Bc0",
+			"enabled": true
+		},
+		{
+			"key": "contactid",
+			"value": "658b2bdae81b4300138321bc",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "contactID",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-01-03T16:56:55.192Z",
+	"_postman_exported_using": "Postman/10.21.9"
+}
