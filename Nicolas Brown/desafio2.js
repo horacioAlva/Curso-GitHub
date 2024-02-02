@@ -1,18 +1,22 @@
-// desafio 1 - determinar si el numero ingresado es primo
+// desafio 2 - determinar si los arrays son similares
 
-function esprimo(num){
-
-    if (num <= 1){
-        return (`El numero ${num} no es primo, ya que es menor o igual a 1.`)
+function SonSimilares(array1,array2){
+    document.getElementById("demo1").innerHTML = "array1 :"+array1+" array2 : "+array2;
+    if (array1.length !== array2.length){
+        document.getElementById("demo2").innerHTML = "Los arrays no tienen la misma longitud";
+        return false
     }
-    for (let i = 2; i < num; i++){
-        if(num % 1 === 0){
-            return (`El numero ${num} no es primo.`)
+    for (let i = 0, total = array1.length; i <= total; i++){
+        if (array1[i] !== array2[i]){
+            document.getElementById("demo2").innerHTML = "Los valores del elemento "+i+" no coinciden.";
+            return false
         }
     }
-    return (`El numero ${num} es primo.`)
+    document.getElementById("demo2").innerHTML = "Los arrays son similares.";
+    return true
 }
 
-console.log(esprimo(1))//true
-console.log(esprimo(2))//true
-console.log(esprimo(4))//false
+//console.log(SonSimilares([1,2,3],[1,2]))
+//console.log(SonSimilares([1,2,3],[1,2,3]))
+console.log(SonSimilares([1,2,3],[1,2,'3']))
+//console.log(SonSimilares(['1',2,3],[1,2,3]))
