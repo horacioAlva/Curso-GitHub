@@ -12,7 +12,5 @@ function esprimo(num){
     }
     return (`El numero ${num} es primo.`)
 }
-
-console.log(esprimo(1))//true
-console.log(esprimo(2))//true
-console.log(esprimo(4))//false
+const aNumber = Number(window.prompt("Type a number", ""));
+console.log(esprimo(aNumber))//true
