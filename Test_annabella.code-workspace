@@ -1,0 +1,18 @@
+//Contar cuántos números pares hay entre uno y 100
+let contador = 0;
+for(let num = 1; num <= 100; num++){
+    const esPar = num % 2 == 0;
+    if(esPar){
+        contador +=1;
+    }
+}
+
+console.log(contador);
+
+function esPrimo(numero) {
+    for (let i = 2; i < numero; i++) {
+        if (numero % i === 0) {
+            return false;
+        }
+    }
+    return numero !== 1; // 1 no es primo
